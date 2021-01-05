@@ -1,0 +1,36 @@
+{
+    "name": "iliakologrivov/rabbitmq-global-event-bus",
+    "description": "events bus",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ilia Kologrivov",
+            "email": "iliakologrivov@yandex.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.2",
+        "php-amqplib/php-amqplib": "^2.12",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "ext-pcntl": "*",
+        "ext-posix": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "IliaKologrivov\\RabbitMQGlobalEventBus\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0",
+        "mockery/mockery": "^1.4"
+    }
+}

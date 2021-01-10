@@ -12,7 +12,7 @@ use PhpAmqpLib\Message\AMQPMessage;
 
 /**
  * Class Pusher
- * @package IliaKologrivov\RabbitMQGlobalEventBus
+ * @package IliaKologrivov\RabbitMQGlobalEventBus\Sender
  */
 class Sender
 {

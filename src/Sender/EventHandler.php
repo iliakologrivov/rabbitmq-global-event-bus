@@ -6,7 +6,7 @@ namespace IliaKologrivov\RabbitMQGlobalEventBus\Sender;
 
 /**
  * Class EventHandler
- * @package IliaKologrivov\RabbitMQGlobalEventBus\Pusher
+ * @package IliaKologrivov\RabbitMQGlobalEventBus\Sender
  */
 class EventHandler
 {

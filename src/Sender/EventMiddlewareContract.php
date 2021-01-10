@@ -6,7 +6,7 @@ namespace IliaKologrivov\RabbitMQGlobalEventBus\Sender;
 
 /**
  * Interface EventMiddlewareContract
- * @package IliaKologrivov\RabbitMQGlobalEventBus\Pusher
+ * @package IliaKologrivov\RabbitMQGlobalEventBus\Sender
  */
 interface EventMiddlewareContract
 {

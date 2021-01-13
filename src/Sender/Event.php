@@ -5,31 +5,25 @@ declare(strict_types=1);
 namespace IliaKologrivov\RabbitMQGlobalEventBus\Sender;
 
 /**
- * Class AbstractEvent
+ * Interface Event
  * @package IliaKologrivov\RabbitMQGlobalEventBus\Sender
  */
-abstract class AbstractEvent implements Event
+interface Event
 {
     /**
      * @return string
      */
-    abstract public function getName(): string;
+    public function getName(): string;
 
     /**
      * @return array
      */
-    public function getPayload(): array
-    {
-        return get_object_vars($this);
-    }
+    public function getPayload(): array;
 
     /**
      * @return \DateTimeImmutable
      *
      * @throws \Exception
      */
-    public function getTimestamp(): \DateTimeImmutable
-    {
-        return new \DateTimeImmutable();
-    }
+    public function getTimestamp(): \DateTimeImmutable;
 }

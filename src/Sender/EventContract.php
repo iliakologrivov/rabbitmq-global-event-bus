@@ -8,7 +8,7 @@ namespace IliaKologrivov\RabbitMQGlobalEventBus\Sender;
  * Interface Event
  * @package IliaKologrivov\RabbitMQGlobalEventBus\Sender
  */
-interface Event
+interface EventContract
 {
     /**
      * @return string

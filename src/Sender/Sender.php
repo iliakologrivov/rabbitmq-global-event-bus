@@ -69,10 +69,10 @@ class Sender
     }
 
     /**
-     * @param AbstractEvent $event
+     * @param EventContract $event
      * @throws \Exception
      */
-    public function send(AbstractEvent $event): void
+    public function send(EventContract $event): void
     {
         $this->getConnection()
             ->channel()

@@ -32,12 +32,12 @@ class EventHandler
     }
 
     /**
-     * @param AbstractEvent $event
+     * @param EventContract $event
      * @return array
      *
      * @throws \Exception
      */
-    public function handle(AbstractEvent $event): array
+    public function handle(EventContract $event): array
     {
         $eventName = $event->getName();
 

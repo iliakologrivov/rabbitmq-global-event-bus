@@ -8,7 +8,7 @@ namespace IliaKologrivov\RabbitMQGlobalEventBus\Sender;
  * Class AbstractEvent
  * @package IliaKologrivov\RabbitMQGlobalEventBus\Sender
  */
-abstract class AbstractEvent implements Event
+abstract class AbstractEvent implements EventContract
 {
     /**
      * @return string

@@ -10,5 +10,5 @@ namespace IliaKologrivov\RabbitMQGlobalEventBus\Sender;
  */
 interface EventMiddlewareContract
 {
-    public function handler(string $eventName, $payload): array;
+    public function handle(string $eventName, $payload): array;
 }

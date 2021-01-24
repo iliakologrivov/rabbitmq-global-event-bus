@@ -16,7 +16,7 @@ class EventHandler
     protected $middleware = [];
 
     /**
-     * @return array
+     * @return EventMiddlewareContract[]
      */
     public function getMiddleware(): array
     {
@@ -47,7 +47,7 @@ class EventHandler
         ];
 
         foreach ($this->getMiddleware() as $middleware) {
-            $data = $middleware->handler($eventName, $data);
+            $data = $middleware->handle($eventName, $data);
         }
 
         return $data;
